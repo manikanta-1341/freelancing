@@ -71,12 +71,13 @@ const Posts = ()=> {
         posts_fetch_apiStatus === "pending" ?
             <Box></Box>
             : posts_fetch_apiStatus === "success" ?
+            
                 <Stack spacing={{xs:4}}>
                     <AppBar sx={{ zIndex: 1, position: "static" }}>
                         <Toolbar sx={{ justifyContent: "end" }}>
                             <Stack direction={{ sm: "row" }} spacing={{ md: 4 }} alignItems="center">
                                 <Button onClick={() => Logout()} sx={{ color: "white" }}>Logout</Button>
-                                <Typography sx={{ fontWeight: "bold", textTransform: "capitalize" }}>{"welcome" + " " + lancer_info.firstname + " " + lancer_info.lastname}</Typography>
+                                <Typography sx={{ fontWeight: "bold", textTransform: "capitalize" }}>welcome&nbsp;{lancer_info.firstname + " " + lancer_info.lastname}</Typography>
                             </Stack>
                         </Toolbar>
                     </AppBar>
