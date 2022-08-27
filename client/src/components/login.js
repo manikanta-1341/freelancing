@@ -59,7 +59,6 @@ export default function Login() {
     }
     return (
         <Box my={{ xs: "15%", md: "10%" }} mx={{ xs: 2, sm: "auto" }} width={{ sm: 500 }}>
-            <Box component="img"/>
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
